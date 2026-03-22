@@ -334,21 +334,8 @@
     }
 
     function gameOver() {
-      running = false;
-      justDied = true;
-      clearInterval(gameLoop);
-      overlay.style.display = "flex";
-      overlayInner.innerHTML = `
-        <h2>Game over</h2>
-        <p>Score: ${score} · Best: ${bestScore}</p>
-        <button id="restart-btn">Play again</button>
-        <div class="controls-hint">Arrow keys to move · Space to pause</div>
-      `;
-      document.getElementById("restart-btn").onclick = () => {
-        resetGame();
-        startGame();
-      };
-    }
+  location.reload();
+}
 
     function startGame() {
       overlay.style.display = "none";
