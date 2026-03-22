@@ -1,1 +1,1 @@
-# google_snake
+# Google Snake project
